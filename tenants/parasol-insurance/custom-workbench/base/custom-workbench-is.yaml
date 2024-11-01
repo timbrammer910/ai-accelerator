@@ -5,7 +5,7 @@ metadata:
     opendatahub.io/notebook-image-creator: admin
     opendatahub.io/notebook-image-desc: This is a custom notebook for running the parasol insurance code
     opendatahub.io/notebook-image-name: Custom Notebook
-    opendatahub.io/notebook-image-url: 'quay.io/arckrish/custom-image:1.1'
+    opendatahub.io/notebook-image-url: 'quay.io/rh_tbrammer/custom_notebook:latest'
     opendatahub.io/recommended-accelerators: '[]'
   name: custom_notebook
   namespace: redhat-ods-applications
@@ -21,10 +21,10 @@ spec:
       annotations:
         opendatahub.io/notebook-python-dependencies: '[]'
         opendatahub.io/notebook-software: '[]'
-        openshift.io/imported-from: 'quay.io/arckrish/custom-image:1.1'
+        openshift.io/imported-from: 'quay.io/rh_tbrammer/custom_notebook:latest'
       from:
         kind: DockerImage
-        name: 'quay.io/arckrish/custom-image:1.1'
+        name: 'quay.io/rh_tbrammer/custom_notebook:latest'
       importPolicy:
         importMode: Legacy
       referencePolicy:
