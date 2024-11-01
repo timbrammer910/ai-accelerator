@@ -8,7 +8,7 @@ metadata:
     opendatahub.io/accelerator-name: ''
     openshift.io/description: ''
     openshift.io/display-name: custom-workbench
-    notebooks.opendatahub.io/last-image-selection: 'custom-notebook:latest'
+    notebooks.opendatahub.io/last-image-selection: 'custom_notebook:latest'
   name: custom-workbench
   namespace: parasol-insurance
 spec:
@@ -17,7 +17,7 @@ spec:
       affinity: {}
       containers:
         - name: custom-workbench
-          image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/custom-notebook:latest'
+          image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/custom_notebook:latest'
           resources:
             limits:
               cpu: '2'
