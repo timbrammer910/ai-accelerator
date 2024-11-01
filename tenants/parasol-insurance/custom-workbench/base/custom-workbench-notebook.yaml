@@ -8,7 +8,7 @@ metadata:
     opendatahub.io/accelerator-name: ''
     openshift.io/description: ''
     openshift.io/display-name: custom-workbench
-    notebooks.opendatahub.io/last-image-selection: 'custom_notebook:latest'
+    notebooks.opendatahub.io/last-image-selection: 'custom-notebook:latest'
   name: custom-workbench
   namespace: parasol-insurance
 spec:
@@ -17,7 +17,7 @@ spec:
       affinity: {}
       containers:
         - name: custom-workbench
-          image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/custom_notebook:latest'
+          image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/custom-notebook:latest'
           resources:
             limits:
               cpu: '2'
@@ -55,7 +55,7 @@ spec:
                 --ServerApp.quit_button=False
                 --ServerApp.tornado_settings={"user":"user1","hub_host":"","hub_prefix":"/projects/parasol-insurance"}
             - name: JUPYTER_IMAGE
-              value: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/custom_notebook:latest'
+              value: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/custom-notebook:latest'
             - name: PIP_CERT
               value: /etc/pki/tls/custom-certs/ca-bundle.crt
             - name: REQUESTS_CA_BUNDLE
