@@ -7,7 +7,7 @@ metadata:
     opendatahub.io/notebook-image-name: Custom Notebook
     opendatahub.io/notebook-image-url: 'quay.io/rh_tbrammer/custom_notebook:latest'
     opendatahub.io/recommended-accelerators: '[]'
-  name: custom-notebook
+  name: custom_notebook
   namespace: redhat-ods-applications
   labels:
     app.kubernetes.io/created-by: byon
