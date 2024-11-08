@@ -9,6 +9,7 @@ metadata:
     openshift.io/description: ''
     openshift.io/display-name: custom-workbench
     notebooks.opendatahub.io/last-image-selection: 'custom-notebook:latest'
+    argocd.argoproj.io/sync-options: ServerSideApply=true
   name: custom-workbench
   namespace: parasol-insurance
 spec:
