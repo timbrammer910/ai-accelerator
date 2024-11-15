@@ -5,3 +5,4 @@ namespace: parasol-insurance
 
 resources:
   - dspa.yaml
+  - cm_and_secret.yaml
